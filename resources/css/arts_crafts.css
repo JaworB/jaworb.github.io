@@ -22,13 +22,13 @@ h1 {
 }
 
 #brush {
-  background-color: mediumspringgreen;
+  background-color: rgb(223, 196, 125);
 }
 
 #frame {
-  background-color: lightcoral;
+  background-color: rgb(99, 48, 6);
 }
 
 #paint {
-  background-color: skyblue;
+  background-color: rgb(44, 105, 55);
 }
