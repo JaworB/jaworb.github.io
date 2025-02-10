@@ -1,71 +1,152 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Davie JR's Menu</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,500,700|Oswald:300,400,700" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="reset.css">
-  <link rel="stylesheet" type="text/css" href="box_model_broadway.css">
-</head>
+html, body {
+  margin: 0;
+  padding: 0;
+}
 
-<body>
+header {
+  background-color: #333333;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
 
-  <!-- Navigation Section -->
+nav {
+  margin: 0;
+  padding: 20px 0;
+}
 
-  <nav>
-    <img src="https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_burger-logo.svg" />
-    <span><a href="#">MENU</a></span>
-    <span><a href="#">NUTRITION</a></span>
-    <span><a href="#">ORDER</a></span>
-    <span><a href="#">LOCATIONS</a></span>
-  </nav>
+nav li {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  display: inline-block;
+  width: 80px;
+}
 
-  <!-- Content Section -->
+main {
+  text-align: center;
+  position: relative;
+  top: 80px;
+}
 
-  <div class="content">
+main h1 {
+  color: #333;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 70px;
+  margin-top: 0px;
+  padding-top: 80px;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+}
 
-    <!-- Content Header -->
-    
-    <div class="header">
-      <h1>BBQ BACON BURGER</h1>
-    </div>
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  bottom: 0;
+}
 
-    <!-- Content Body -->
+footer p {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-size: 11px;
+}
 
-    <div class="body">
-      <p>
-        Our BBQ Bacon Burger features our special house ground blend of wagyu and sirloin, spiced perfectly, and finished off with just a drop of white truffle oil. A butter grilled brioche bun layered with roasted red onion, perfectly crispy pork belly, and our hickory smoked BBQ sauce.
-      </p>
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+  text-align: center;
+}
 
-      <!-- Order Button -->
+.jumbotron {
+  height: 800px;
+  background-image: url("https://content.codecademy.com/projects/broadway/bg.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
-      <a href="#" class="button">ORDER NOW</a>
+.btn-main {
+  background-color: #333;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1.3px;
+  padding: 16px 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
 
-      <!-- Nutrition Information -->
-      
-      <ul class="nutrition">
-        <li>
-          <span class="category">CALORIES</span>
-          <span class="value">678</span>
-        </li>
-        <li>
-          <span class="category">FAT</span>
-          <span class="value">32</span>
-        </li>
-        <li>
-          <span class="category">PROTEIN</span>
-          <span class="value">8</span>
-        </li>
-        <li>
-          <span class="category">CARBOHYDRATES</span>
-          <span class="value">34</span>
-        </li>
-        <li>
-          <span class="category">SODIUM</span>
-          <span class="value">112</span>
-        </li>
-      </ul>
-    </div>
-  </div>
-  
-</body>
-</html>
+.btn-default {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 1.3px;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;  
+  margin-bottom: 20px;      
+}
+
+.supporting {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.supporting .col {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  display: inline-block;
+  width: 200px;
+}
+
+.supporting img {
+  height: 32px;
+}
+
+.supporting h2 {
+  font-weight: 600;
+  font-size: 23px;
+  text-transform: uppercase;
+}
+
+.supporting p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.supporting a {
+  background-color: white;
+  color: #333333;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 1.3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #333333; 
+}
+
+@media (max-width: 500px) {
+  main h1 {
+    font-size: 50px;
+    padding: 0 40px;
+  }
+
+  .supporting .col {
+    width: 100%;
+  }
+}
