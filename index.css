@@ -1,0 +1,55 @@
+/* * { */
+  /* box-sizing: border-box; */
+  /* margin: 0; */
+  /* padding: 0; */
+/* } */
+
+body {
+  background-color: black;
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  opacity: 0.9;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+}
+
+.nav-container {
+  justify-content:flex-end;
+  background-color: black;
+  min-height: 69px;
+  border-bottom: 1px solid seashell;
+  position: sticky;
+  top: 0;
+  opacity: 75%;
+}
+
+.nav-links{
+  display: flex;
+  margin-right: 10px;
+  align-items: center;
+}
+.navlink-item {
+  color: seashell;
+  text-decoration: underline;
+  margin-right: 15px; 
+  padding: 5px;
+}
+
+.navlink-item:hover {
+  text-decoration: underline overline;
+}
+
+.tabela{
+  border: 3px solid gray;
+  flex-direction: column;
+  width: 1000px;
+  margin: 10px auto;
+}
