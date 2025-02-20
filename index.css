@@ -47,9 +47,25 @@ header {
   text-decoration: underline overline;
 }
 
-.tabela{
+.tabela {
   border: 3px solid gray;
   flex-direction: column;
   width: 1000px;
   margin: 10px auto;
+  color: seashell;
+}
+
+.tabela .sekcja {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.tabela li{
+  margin: 10px auto;
+}
+.tabela a{
+  color:  seashell;
+}
+.tabela a:hover{
+  color:  seashell;
+  text-decoration: underline overline;
 }

@@ -5,25 +5,25 @@
   <title>Strona testowa</title>
   <link href="index.css" type="text/css" rel="stylesheet">
 </head>
+<nav class="container nav-container">
+  <div class="container nav-links">
+      <a class="navlink-item" href="#html">HTML</a>
+      <a class="navlink-item" href="#css">CSS</a>
+      <a class="navlink-item" href="#projekty">PROJEKTY</a>
+  </div>
+</nav>
 <header>
   <h1>Zapis labów z codecademy</h1>
 </header>
-<nav class="container nav-container">
-  <div class="container nav-links">
-      <a class="navlink-item" href="#">HTML</a>
-      <a class="navlink-item" href="#">CSS</a>
-      <a class="navlink-item" href="#">PROJEKTY</a>
-  </div>
-</nav>
 <body>
   <section class="container tabela">
-    <div id="HTML">HTML
+    <div class="sekcja" id="html">HTML
       <ul>
         <li><a href="./codecademy/html/tabela/tabela.html">Tabela</a></li>
         <li><a href="./codecademy/html/semantyka/semantyka.html">Semantyka</a></li>
       </ul>
     </div>
-    <div id="CSS">CSS
+    <div class="sekcja CSS" id="css">CSS
       <ul>
         <li><a href="./codecademy/css/basic/basic.html">Basic</a></li>
         <li><a href="./codecademy/css/basic/basic_2.html">Basic_2</a></li>
@@ -50,20 +50,26 @@
             <li><a href="codecademy/css/flex_box/flexbox-review.html">Flex-box - Review</a></li>
           </ul>
         </li>
+      </ul>
+    </div>
+    <div class="sekcja Projekty" id="projekty">Projekty
+      <ul>
         <li>
           <a href="./codecademy/css/paint_store/paint_store.html">Paint Store</a>
-          <a href="./codecademy/css/paint_store/paint_store_done.html">wykonany</a>
+          <ul>
+            <li><a href="./codecademy/css/paint_store/paint_store_done.html">wykonany</a></li>
+          </ul>
         </li>
         <li><a href="./codecademy/css/arts_crafts/arts_crafts.html">Arts & Crafts</a></li>
         <li><a href="./codecademy/css/typografia/typografia.html">Typografia</a>
-          <a href="./codecademy/css/typografia/typografia_done.html">wykonany</a>
+          <ul>
+            <li><a href="./codecademy/css/typografia/typografia_done.html">wykonany</a></li>
+          </ul>
         </li>
-      </ul>
-    </div>
-    <div class="PROJEKTY">Projekty
-      <ul>
         <li><a href="codecademy/projekty/Tea Cozy/html/index.html">Tea Cozy</a></li>
-        <li><a href="codecademy/projekty/Tea Cozy mój/html/index.html">Tea Cozy - mój</a></li>
+          <ul>
+            <li><a href="codecademy/projekty/Tea Cozy mój/html/index.html">Tea Cozy - mój</a></li>
+          </ul>
       </ul>
     </div>
   </section>
