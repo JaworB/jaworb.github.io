@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: black;
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    opacity: 0.9;
+
+}
+
+.container {
+    display: flex;
+}
+
+nav {
+    border-bottom: 1px solid seashell;
+    min-height: 69px;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    opacity: 75%;
+}
+
+.nav-container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    height: 50px;
+    width: auto ;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+/* NAV link */
+
+.nav-link-container {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.nav-link {
+    margin-right: 15px;
+    color: seashell;
+    padding: 5px;
+}
+
+.nav-link:hover {
+    text-decoration: underline overline;
+    color: seashell
+}
+
+/* header */
+
+.hero {
+    background:no-repeat url("../media/img-mission-background.jpg");
+    background-position: center;
+    height: 700px;
+    width: auto;
+    margin: auto;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.mission {
+    background-color: black;
+    flex-direction:column;
+    min-height: 100px;
+    width: 100%;
+    text-align: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+/* tea of the month */
+
+.tea-o-month {
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.month-text {
+    max-width: 1000px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.month-tea {
+    max-width: 1000px;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.item-month {
+    flex-direction: column;
+    text-align: center;
+}
+
+.item-month img {
+    height: 200px;
+    width: 300px;
+    margin: 10px;
+}
+
+.background-location {
+    background: no-repeat url("../media/img-locations-background.jpg");
+    min-height: 500px;
+    width: auto;
+    background-position: center;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.location {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    margin-top: 15px;
+}
+
+
+.address-card {
+    flex-direction: column;
+    margin-right: 40px;
+    background-color: black;
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    justify-content: space-evenly;
+    opacity: 1;
+}
+
+
+.contact-card {
+    height: 200px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.copyright {
+    margin-left: 20px;
+}
